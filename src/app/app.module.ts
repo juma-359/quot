@@ -8,7 +8,6 @@ import { CountInputComponent } from './count-input/count-input.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { DateCountPipesComponent } from './date-count-pipes/date-count-pipes.component';
 import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { DateCountPipe } from './date-count.pipe';
     QuoteComponent,
     QuoteDetailComponent,
     QuoteFormComponent,
-    DateCountPipesComponent,
     DateCountPipe
   ],
   imports: [
