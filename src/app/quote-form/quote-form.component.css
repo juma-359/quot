@@ -1,0 +1,15 @@
+.container{
+    width: 130%;
+    padding-left: 100px
+}
+
+label{
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+}
+h2{
+    font-size: xx-large;
+    text-decoration: azure underline;
+    font-family: Arial, Helvetica, sans-serif;
+}

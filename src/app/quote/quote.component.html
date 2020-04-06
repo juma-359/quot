@@ -4,18 +4,18 @@
     </div>
     <div class="row">
         <div class="col-md-6">
-            <div *ngFor='let quote of quotes let e = index'>
+            <div *ngFor='let quote of quotes; let i = index'>
 
             </div>
             <br>
-            <h6 class="card-body">{{quote.name}}, uploaded by {{quote.uploader}}, due on {{quote.completeDate|date|lowecase}}</h6>
-            <button (click) = 'toggleDetais(e)' class="btn btn-success">Explore</button>
+            <h6 class="card-body">{{quote.name}}, uploaded by {{quote.uploader}}, due on {{quote.completeDate|date|lowercase}}</h6>
+            <button (click) = 'toggleDetais(i)' class="btn btn-success">Explore</button>
             <div *ngIf='quote.showDescription'>
-                <app-quote-detail [quote] = 'quote' (isComplete) = 'completeQuote($event,e)'></app-quote-detail>
+                <app-quote-detail [quote] = 'quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
             </div>
         </div>
         <div class="col-md-6">
-            <app-quote-form (addQuote)="addNewQuot($event)"></app-quote-form>
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
         </div>        
     </div>
 </div>
